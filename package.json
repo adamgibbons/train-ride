@@ -1,0 +1,23 @@
+{
+  "name": "train-ride",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass src/styles.sass src/styles.css"
+  },
+  "author": "Adam Gibbons",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adamgibbons/train-ride.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamgibbons/train-ride/issues"
+  },
+  "homepage": "https://github.com/adamgibbons/train-ride#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
