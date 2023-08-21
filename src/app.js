@@ -26,6 +26,6 @@ buttons.forEach((button) =>
       }
     });
 
-    app.dispatchEvent(switchEvent);
+    app.dispatchEvent(switchEvent)
   })
-);
+)

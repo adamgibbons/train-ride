@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass src/styles.sass src/styles.css"
+    "sass": "node-sass src/styles.sass src/styles.css",
+    "dev": "node-sass src/styles.sass src/styles.css --recursive"
   },
   "author": "Adam Gibbons",
   "license": "ISC",
