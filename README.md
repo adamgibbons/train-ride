@@ -1,8 +1,9 @@
 # Train Ride
 
 To do:
-- [ ] SASS preprocessing
+- [x] SASS preprocessing
 - [ ] PUG preprocessing
 - [ ] dev server
 - [ ] deploy script
-- [ ] 
+
+change time of day by changing fill colors?
