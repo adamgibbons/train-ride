@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll("button")
 const app = document.querySelector("#train-ride")
+const scape = document.querySelector("#scape")
 
 app.addEventListener("switch", (e) => {
   const { name, category } = e.detail
@@ -9,6 +10,10 @@ app.addEventListener("switch", (e) => {
     .forEach((b) => b.classList.remove("selected"))
 
   document.querySelector(`button[name=${name}]`).classList.add("selected")
+
+  scape.classList.remove('dawn','noon','dusk','night')
+//   console.log({ name })
+  scape.classList.add(name)
 })
 
 buttons.forEach((button) =>

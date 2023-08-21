@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="./src/styles.css">
 
-
 <body>
     <div class="container" id="train-ride">
-        <div class="landscape">
+        <div class="landscape dawn" id="scape">
             <div class="layer layer-1"></div>
             <div class="layer layer-2"></div>
             <div class="layer layer-3"></div>
@@ -23,13 +22,16 @@
         </div>
     </div>
     <div class="toolbar">
-        <div class="btn-group"><button name="dawn" data-category="timeOfDay">Dawn</button><button name="noon"
-                data-category="timeOfDay">Noon</button><button class="selected" name="dusk"
-                data-category="timeOfDay">Dusk</button><button name="night" data-category="timeOfDay">Night</button>
+        <div class="btn-group">
+            <button name="dawn" data-category="timeOfDay" class="selected">Dawn</button>
+            <button name="noon" data-category="timeOfDay">Noon</button>
+            <button name="dusk" data-category="timeOfDay">Dusk</button>
+            <button name="night" data-category="timeOfDay">Night</button>
         </div>
-        <div class="btn-group"><button class="selected" name="mountains"
-                data-category="scape">Mountainscape</button><button name="sea"
-                data-category="scape">Seascape</button><button name="plains" data-category="scape">Landscape</button>
+        <div class="btn-group">
+            <button name="mountains" data-category="scape" class="selected">Mountainscape</button>
+            <button name="sea" data-category="scape">Seascape</button>
+            <button name="plains" data-category="scape">Landscape</button>
         </div>
     </div>
     <script src="./src/app.js"></script>
