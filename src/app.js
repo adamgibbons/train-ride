@@ -4,6 +4,8 @@ const scape = document.querySelector("#scape")
 
 app.addEventListener("switch", (e) => {
   const { name, category } = e.detail
+  console.log(e)
+  // console.log({ name, category })
 
   document
     .querySelectorAll(`button[data-category=${category}]`)
@@ -11,11 +13,13 @@ app.addEventListener("switch", (e) => {
 
   document.querySelector(`button[name=${name}]`).classList.add("selected")
 
-  scape.classList.remove('dawn','noon','dusk','night')
-//   console.log({ name })
-  scape.classList.add(name)
-
-  // document.getElementById('mountains-layer-5').style.fill = 'yellow'
+  if (category === 'timeOfDay') {
+    scape.classList.remove('dawn','noon','dusk','night')
+    scape.classList.add(name)
+  } else {
+    scape.classList.remove('mountains', 'sea', 'land')
+    scape.classList.add(name)
+  }
 })
 
 

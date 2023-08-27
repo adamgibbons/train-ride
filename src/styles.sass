@@ -58,7 +58,7 @@ body
         left: 49%
       .vertical-pane-3
         left: 74%
-    .landscape
+    .beyond-train-window
       padding: 0
       height: 400px
       width: 1800px
@@ -68,41 +68,59 @@ body
       clip: rect(0px, 600px, 400px, 0px)
       left: 50%
       margin-left: -300px
-      &.dawn
-        background: #6E4C7D
-        @each $index, $speed in (1, 6s),
-        (2, 30s),
-        (3, 90s),
-        (4, 500s),
-        (5, 5000s)
-          .layer-#{$index}
-            animation: parallax_fg linear $speed infinite both
-            position: absolute
-            bottom: 0
-            left: 0
-            width: 100%
-            height: 100%
-            background: url(http://localhost:8000/assets/svg/mountains-dawn-layer-#{$index}.svg) left bottom repeat-x
-            background-size: 1200px auto
-            z-index: 10 - $index
-            svg
-      &.noon
-        background: #9AE7FF
-        @each $index, $speed in (1, 6s),
-        (2, 30s),
-        (3, 90s),
-        (4, 500s),
-        (5, 5000s)
-          .layer-#{$index}
-            animation: parallax_fg linear $speed infinite both
-            position: absolute
-            bottom: 0
-            left: 0
-            width: 100%
-            height: 100%
-            background: url(http://localhost:8000/assets/svg/mountains-noon-layer-#{$index}.svg) left bottom repeat-x
-            background-size: 1200px auto
-            z-index: 10 - $index
+      &.mountains
+        &.dawn
+          background: #6E4C7D
+          @each $index, $speed in (1, 6s),
+          (2, 30s),
+          (3, 90s),
+          (4, 500s),
+          (5, 5000s)
+            .layer-#{$index}
+              animation: parallax_fg linear $speed infinite both
+              position: absolute
+              bottom: 0
+              left: 0
+              width: 100%
+              height: 100%
+              background: url(http://localhost:8000/assets/svg/mountains-dawn-layer-#{$index}.svg) left bottom repeat-x
+              background-size: 1200px auto
+              z-index: 10 - $index
+        &.noon
+          background: #9AE7FF
+          @each $index, $speed in (1, 6s),
+          (2, 30s),
+          (3, 90s),
+          (4, 500s),
+          (5, 5000s)
+            .layer-#{$index}
+              animation: parallax_fg linear $speed infinite both
+              position: absolute
+              bottom: 0
+              left: 0
+              width: 100%
+              height: 100%
+              background: url(http://localhost:8000/assets/svg/mountains-noon-layer-#{$index}.svg) left bottom repeat-x
+              background-size: 1200px auto
+              z-index: 10 - $index
+      &.sea
+        &.dawn
+          background: yellow
+          // @each $index, $speed in (1, 6s),
+          // (2, 30s),
+          // (3, 90s),
+          // (4, 500s),
+          // (5, 5000s)
+          //   .layer-#{$index}
+          //     animation: parallax_fg linear $speed infinite both
+          //     position: absolute
+          //     bottom: 0
+          //     left: 0
+          //     width: 100%
+          //     height: 100%
+          //     background: url(http://localhost:8000/assets/svg/mountains-dawn-layer-#{$index}.svg) left bottom repeat-x
+          //     background-size: 1200px auto
+          //     z-index: 10 - $index
 
 .toolbar
   position: absolute
