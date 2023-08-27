@@ -14,7 +14,10 @@ app.addEventListener("switch", (e) => {
   scape.classList.remove('dawn','noon','dusk','night')
 //   console.log({ name })
   scape.classList.add(name)
+
+  // document.getElementById('mountains-layer-5').style.fill = 'yellow'
 })
+
 
 buttons.forEach((button) =>
   button.addEventListener("click", (event) => {
