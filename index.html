@@ -4,8 +4,24 @@
 <title>Train Ride</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="./src/styles.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
 <body>
+    <h1 class="title">Train Ride</h1>
+    <div class="toolbar">
+        <div class="btn-group">
+            <button name="dawn" data-category="timeOfDay" class="selected">Dawn</button>
+            <button name="noon" data-category="timeOfDay">Noon</button>
+            <button name="dusk" data-category="timeOfDay">Dusk</button>
+            <button name="night" data-category="timeOfDay">Night</button>
+        </div>
+        <div class="btn-group" style="display:none">
+            <button name="mountains" data-category="scape" class="selected">Mountainscape</button>
+            <button name="sea" data-category="scape">Seascape</button>
+            <button name="plains" data-category="scape">Landscape</button>
+        </div>
+    </div>
     <div class="container" id="train-ride">
         <div class="beyond-train-window mountains dawn" id="scape">
             <div class="layer layer-1"></div>
@@ -21,19 +37,8 @@
             <div class="vertical-pane vertical-pane-3"></div>
         </div>
     </div>
-    <div class="toolbar">
-        <div class="btn-group">
-            <button name="dawn" data-category="timeOfDay" class="selected">Dawn</button>
-            <button name="noon" data-category="timeOfDay">Noon</button>
-            <button name="dusk" data-category="timeOfDay">Dusk</button>
-            <button name="night" data-category="timeOfDay">Night</button>
-        </div>
-        <div class="btn-group">
-            <button name="mountains" data-category="scape" class="selected">Mountainscape</button>
-            <button name="sea" data-category="scape">Seascape</button>
-            <button name="plains" data-category="scape">Landscape</button>
-        </div>
-    </div>
+    
+
     <script src="./src/app.js"></script>
 </body>
 

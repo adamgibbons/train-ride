@@ -5,38 +5,40 @@
     background-position: 1200px 100%
 
 body, window, document
+
+  background: #444
   margin: 0
   padding: 0
   // background: black
   overflow-x: hidden
-  height: 100%
+  // height: 100%
 .title
-  position: relative
-  color: black
-  font-size: 20px
-  width: auto
-  margin: 0 auto
-  background: blue
   text-align: center
+  // background: yellow
+  color: white
+
 
 body
-  height: 100vh
 
+  font-family: 'Crete Round', serif
+  min-width: 600px
   .container
-    background: #555
+    // min-width: 600px
     height: 100%
     margin: 0 auto
     .train-window
       z-index: 20
-      margin: 0 auto
+      // margin: 0 auto
       padding: 0
       // background-color: maroon
       height: 400px
       width: 600px
       border: 10px solid #aaa
-      position: relative
+      position: absolute
       border-radius: 30px
       top: 100px
+      left: 50%
+      margin-left: -310px
       .horizontal-pane
         height: 10px
         background: #aaa
@@ -163,14 +165,21 @@ body
   position: absolute
   bottom: 0
   margin: 20px
-  select, option
-    font-size: 24px
+  text-align: center
+  width: 100%
 
 button
   border-radius: 5px
   font-size: 24px
-  padding: .33em
-  background: #ddd
+  padding: .5em
+  background: none
   border: none
+  color: #aaa
+  cursor: pointer
+  border: 2px solid #888
+  &:hover
+    border: 2px solid #ccc
   &.selected
-    background: lightblue
+    // background: lightblue
+    border: 2px solid white
+    color: white
