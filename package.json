@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass src/styles.sass src/styles.css",
-    "dev": "node-sass src/styles.sass src/styles.css --recursive --watch"
+    "dev": "node-sass src/styles.sass src/styles.css --recursive --watch",
+    "start": "npx http-server -o /index.html -p 8000"
   },
   "author": "Adam Gibbons",
   "license": "ISC",
